@@ -33,9 +33,9 @@
 </template>
 
 <script setup lang="ts">
-import type { PrizeConfig, CanvasConfig } from './types'
-import { useCanvas } from './hooks/useCanvas'
-import { useRotate } from './hooks/useRotate'
+import type { PrizeConfig, CanvasConfig } from '@/types'
+import { useCanvas } from '@/hooks/useCanvas'
+import { useRotate } from '@/hooks/useRotate'
 
 interface PropsType {
   type?: string
@@ -78,3 +78,4 @@ defineExpose({
 <style lang="scss" scoped>
 @import './FortuneWheel.scss';
 </style>
+../types../hooks/useCanvas../hooks/useRotate
