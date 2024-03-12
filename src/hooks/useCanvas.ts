@@ -1,6 +1,6 @@
 import { ref, computed, onMounted } from 'vue'
-import { getStrArray } from '../utils'
-import type { CanvasConfig, PrizeConfig, PropsType } from '../types'
+import { getStrArray } from '@/utils'
+import type { CanvasConfig, PrizeConfig, PropsType } from '@/types'
 
 const canvasDefaultConfig: CanvasConfig = {
   radius: 250,
@@ -55,7 +55,7 @@ export function useCanvas(props: PropsType) {
         )
 
         // rotate
-        drawPrizeText(ctx, angle, arc, row.name)
+        drawPrizeText(ctx, angle, arc, row.prizeNameOnWheel)
         ctx.restore()
       })
     }
@@ -81,7 +81,7 @@ export function useCanvas(props: PropsType) {
   }
 
   onMounted(() => {
-    if (props.type === 'canvas') drawCanvas()
+    drawCanvas()
   })
 
   return {

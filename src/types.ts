@@ -1,36 +1,12 @@
-interface PrizeConfigBase {
+export interface PrizeConfig {
   id: number
-  value: any
-  [propName: string]: any
-}
-
-interface PrizeConfigBaseCanvas extends PrizeConfigBase {
-  name: string
+  prizeNameOnWheel: string
+  prizeName: string
   bgColor: string
   color: string
-}
-
-interface PrizeConfigProbability extends PrizeConfigBase {
   probability: number
+  [propName: string]: any
 }
-
-interface PrizeConfigProbabilityCanvas extends PrizeConfigBaseCanvas {
-  probability: number
-}
-
-interface PrizeConfigWeight extends PrizeConfigBase {
-  weight: number
-}
-
-interface PrizeConfigWeightCanvas extends PrizeConfigBaseCanvas {
-  weight: number
-}
-
-export type PrizeConfig =
-  | PrizeConfigProbability
-  | PrizeConfigWeight
-  | PrizeConfigProbabilityCanvas
-  | PrizeConfigWeightCanvas
 
 export interface CanvasConfig {
   radius?: number
@@ -46,14 +22,11 @@ export interface CanvasConfig {
 }
 
 export interface PropsType {
-  type: string
-  useWeight: boolean
   disabled: boolean
-  verify: boolean
   canvas: CanvasConfig
   duration: number
   timingFun: string
   angleBase: number
-  prizeId: number
+  winnerId: number
   prizes: PrizeConfig[]
 }
