@@ -2,7 +2,7 @@
   {
     "id": 1,
     "prizeName": "آیتم 1",
-    "prizeNameOnWheel": "1",
+    "prizeNameOnWheel": "آیتم 1",
     "bgColor": "",
     "color": "",
     "probability": 1
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "prizeName": "آیتم 2",
-    "prizeNameOnWheel": "2",
+    "prizeNameOnWheel": "آیتم 2",
     "bgColor": "",
     "color": "",
     "probability": 1
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "prizeName": "آیتم 3",
-    "prizeNameOnWheel": "3",
+    "prizeNameOnWheel": "آیتم 3",
     "bgColor": "",
     "color": "",
     "probability": 1
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "prizeName": "آیتم 4",
-    "prizeNameOnWheel": "4",
+    "prizeNameOnWheel": "آیتم 4",
     "bgColor": "",
     "color": "",
     "probability": 1
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "prizeName": "آیتم 5",
-    "prizeNameOnWheel": "5",
+    "prizeNameOnWheel": "آیتم 5",
     "bgColor": "",
     "color": "",
     "probability": 1
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "prizeName": "آیتم 6",
-    "prizeNameOnWheel": "6",
+    "prizeNameOnWheel": "آیتم 6",
     "bgColor": "",
     "color": "",
     "probability": 1
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "prizeName": "آیتم 7",
-    "prizeNameOnWheel": "7",
+    "prizeNameOnWheel": "آیتم 7",
     "bgColor": "",
     "color": "",
     "probability": 1
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "prizeName": "آیتم 8",
-    "prizeNameOnWheel": "8",
+    "prizeNameOnWheel": "آیتم 8",
     "bgColor": "",
     "color": "",
     "probability": 5
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "prizeName": "آیتم 9",
-    "prizeNameOnWheel": "9",
+    "prizeNameOnWheel": "آیتم 9",
     "bgColor": "",
     "color": "",
     "probability": 5
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "prizeName": "آیتم 10",
-    "prizeNameOnWheel": "10",
+    "prizeNameOnWheel": "آیتم 10",
     "bgColor": "",
     "color": "",
     "probability": 1

@@ -19,7 +19,7 @@
       </v-col>
     </v-row>
 
-    <v-dialog v-model="showResultDialog" width="auto">
+    <v-dialog v-model="showResultDialog" width="auto" @click:outside="onCloseResultDialog">
       <v-container>
         <v-locale-provider rtl>
           <v-card
@@ -29,7 +29,7 @@
             :text="resultDialogText"
           >
             <template v-slot:actions>
-              <v-btn class="ms-auto" text="بستن" @click="closeResultDialog"></v-btn>
+              <v-btn class="ms-auto" text="بستن" @click="onCloseResultDialog"></v-btn>
             </template>
           </v-card>
         </v-locale-provider>
@@ -98,8 +98,11 @@ function onWheelRotateEnd() {
   celebrateWin()
 }
 
-function closeResultDialog() {
-  showResultDialog.value = false
+function onCloseResultDialog() {
+  if (showResultDialog.value === true) {
+    showResultDialog.value = false
+  }
+
   confetti.clear()
   calculateWinnerItem()
 }
