@@ -154,3 +154,9 @@ const closeDialog = () => {
   form.value = { ...emptyForm }
 }
 </script>
+
+<style>
+body {
+  background-color: #e5e7eb !important;
+}
+</style>
