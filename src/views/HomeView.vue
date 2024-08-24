@@ -15,7 +15,9 @@
         <h4 v-else-if="wheelItemsNormalized.length === 1">
           حداقل ۲ آیتم برای گردونه باید ثبت شده باشد
         </h4>
-        <h4 v-else>آیتمی برای گردونه ثبت نشده است</h4>
+        <h4 v-else>
+          آیتمی برای گردونه ثبت نشده است. <router-link to="/admin">پنل ادمین</router-link>
+        </h4>
       </v-col>
     </v-row>
 
