@@ -1,6 +1,11 @@
 <template>
   <v-container>
     <v-row class="text-center">
+      <a href="/admin">
+        <v-btn color="info"> پنل ادمین </v-btn>
+      </a>
+    </v-row>
+    <v-row class="text-center">
       <v-col cols="12">
         <FortuneWheel
           v-if="wheelItemsNormalized.length >= 2"
@@ -15,9 +20,7 @@
         <h4 v-else-if="wheelItemsNormalized.length === 1">
           حداقل ۲ آیتم برای گردونه باید ثبت شده باشد
         </h4>
-        <h4 v-else>
-          آیتمی برای گردونه ثبت نشده است. <router-link to="/admin">پنل ادمین</router-link>
-        </h4>
+        <h4 v-else>آیتمی برای گردونه ثبت نشده است</h4>
       </v-col>
     </v-row>
 
@@ -50,6 +53,7 @@ import FortuneWheel from '@/components/FortuneWheel.vue'
 import type { CanvasConfig, PrizeConfig } from '@/types'
 import { useWheelStore } from '@/stores/wheel'
 import { pickRandomItemWithProbability } from '@/utils'
+import { RouterLink } from 'vue-router'
 
 const wheelStore = useWheelStore()
 const wheelItemsNormalized = wheelStore.getNormalizedWheelItems

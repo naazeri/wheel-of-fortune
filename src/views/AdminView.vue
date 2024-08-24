@@ -2,10 +2,13 @@
   <v-container>
     <v-locale-provider rtl>
       <v-row>
-        <v-col cols="12">
-          <v-btn color="primary" prepend-icon="mdi-check-circle" @click="showAddDialog = true"
-            >ایجاد آیتم جدید</v-btn
-          >
+        <v-col cols="6">
+          <v-btn color="success" @click="showAddDialog = true">ایجاد آیتم جدید</v-btn>
+        </v-col>
+        <v-col cols="6">
+          <v-btn color="info">
+            <a href="/" class="text-center text-decoration-none text-white">مشاهده گردونه</a>
+          </v-btn>
         </v-col>
       </v-row>
       <v-row v-if="items.length > 0">
