@@ -6,9 +6,9 @@
           <v-btn color="success" @click="showAddDialog = true">ایجاد آیتم جدید</v-btn>
         </v-col>
         <v-col cols="6">
-          <v-btn color="info">
-            <a href="/" class="text-center text-decoration-none text-white">مشاهده گردونه</a>
-          </v-btn>
+          <RouterLink :to="{ name: 'home' }">
+            <v-btn color="info"> مشاهده گردونه </v-btn>
+          </RouterLink>
         </v-col>
       </v-row>
       <v-row v-if="items.length > 0">
@@ -130,7 +130,9 @@ const confirmDelete = (index: number) => {
 const saveItem = () => {
   if (currentItemIndex.value !== null) {
     // edit
-    wheelStore.editItem(currentItemIndex.value, { ...form.value })
+    const newData = { ...form.value }
+    newData.prizeNameOnWheel = newData.prizeName
+    wheelStore.editItem(currentItemIndex.value, newData)
   } else {
     // add
     const lastId = items[items.length - 1]?.id ?? 0

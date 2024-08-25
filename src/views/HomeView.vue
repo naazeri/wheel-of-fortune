@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <v-row class="text-center">
-      <a href="/admin">
+    <v-row>
+      <RouterLink :to="{ name: 'admin' }">
         <v-btn color="info"> پنل ادمین </v-btn>
-      </a>
+      </RouterLink>
     </v-row>
     <v-row class="text-center">
       <v-col cols="12">
