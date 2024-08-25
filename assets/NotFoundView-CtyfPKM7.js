@@ -1,0 +1,1 @@
+import{aA as o,ag as a,ap as t,aB as s,aC as c,au as d}from"./index-3egefNH_.js";const n={},_=e=>(s("data-v-0f3a50ed"),e=e(),c(),e),r={class:"container"},p=_(()=>d("h1",null,"404 Not Found",-1)),i=[p];function f(e,u){return a(),t("div",r,i)}const l=o(n,[["render",f],["__scopeId","data-v-0f3a50ed"]]);export{l as default};
